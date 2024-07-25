@@ -1,0 +1,20 @@
+version: '3.7'
+
+services:
+  react:
+    build: ./cinema_bucketlist
+    ports:
+      - "3000:3000"  # Replace with your desired port
+    depends_on:
+      - nodejs
+      - python
+
+  nodejs:
+    build: ./node_service
+    ports:
+      - "8000:8000"  # Replace with your desired port
+
+  python:
+    build: ./python_service
+    ports:
+      - "5000:5000"  # Replace with your desired port
