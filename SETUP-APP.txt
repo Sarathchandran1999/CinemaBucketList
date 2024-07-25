@@ -1,0 +1,28 @@
+SET UP THIS 3 TIER APP (you can choose 1st method or 2nd method)
+----------------------------------------------------------------
+- 1ST METHOD ,IF YOU INSTALLED DOCKER IN YOUR MACHINE--->
+
+- docker-compose up --build 
+
+- use this command in your repo root directory .after run the above command you can accesss http://localhost:3000/ in your local machine
+
+
+
+
+
+2ND METHOD IF YOU DONT HAVE INSTALLED DOCKER IN YOUR MACHINE----->
+
+cinema_bucketlist client
+---------------------------
+1)npm install
+2)npm start
+
+node_service
+------------
+1)npm install
+2)npm start
+
+python_service
+-------------
+1)pip3 install -r requirements.txt
+2)flask run or guvicorn app:app
